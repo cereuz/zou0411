@@ -22,12 +22,12 @@ ext  {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
     testCompile group: 'junit', name: 'junit', version: '4.12'
-
+    
     implementation  'org.slf4j:slf4j-api:1.7.14'
     implementation  "ch.qos.logback:logback-core:${logback}"
     implementation  "ch.qos.logback:logback-classic:${logback}"
     implementation  "javax.servlet:javax.servlet-api:4.0.0"
     implementation  "mysql:mysql-connector-java:8.0.15"
+    
 }

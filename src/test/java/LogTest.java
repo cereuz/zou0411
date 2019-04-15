@@ -1,5 +1,3 @@
-package com.zou;
-
 import com.util.LogZ;
 import com.util.ZaoUtils;
 

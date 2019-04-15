@@ -1,5 +1,9 @@
 package com.zou;
 
+import com.util.DBUtils;
+
+import java.sql.Connection;
+
 /**
  * @author : zw
  * @email : zsky@live.com,
@@ -7,13 +11,13 @@ package com.zou;
  * @motto : To be, or not to be.
  */
 public class UserBean {
-   /* //登录验证
+/*    //登录验证
     public boolean valid(String username,String password){
         boolean isValid = false;
-        DBAcess db = new DBAcess();
+        Connection conn = DBUtils.getConnection();
         if(db.createConn()){
             String sql = "select * from p_user where username='"+username+"' and password='"+password+"'";
-            db.query(sql);
+            conn.prepareStatement(sql);
             if(db.next()){
                 isValid = true;
             }
